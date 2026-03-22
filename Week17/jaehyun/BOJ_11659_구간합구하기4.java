@@ -7,13 +7,13 @@ public class Main {
         int N = sc.nextInt();
         int K = sc.nextInt();
 
-        int[] sum = new int[N+1];
+        int[] sum = new int[N + 1];
         for(int i = 0; i < N; i++){
             sum[i + 1] = sum[i] + sc.nextInt();
         }
 
         for(int i = 0; i < K; i++){
-            System.out.println(- sum[sc.nextInt() - 1]) + sum[sc.nextInt()];
+            System.out.println(- sum[sc.nextInt() - 1] + sum[sc.nextInt()]);
         }
     }
 }
